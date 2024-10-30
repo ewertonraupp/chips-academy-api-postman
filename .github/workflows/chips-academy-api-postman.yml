@@ -36,7 +36,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Step 3 Execute collection
-        run: newman run ./chips-collection.json -e ./chips-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./report.html
+        run: newman run ./chips-collection.json -e ./chips-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/report.html
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v2
@@ -46,13 +46,13 @@ jobs:
 
       - name: Copy report to gh-pages
         run: |
-          mkdir -p gh-pages/reports
-          cp report.html gh-pages/reports/
+          mkdir -p gh-pages/reports/results/
+          cp report.html gh-pages/reports//results/
 
       - name: Commit and push report
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add gh-pages/reports/report.html
+          git add gh-pages/reports/results/report.html
           git commit -m "Add Postman report"
           git push origin gh-pages
