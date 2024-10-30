@@ -45,6 +45,13 @@ jobs:
         with:
             name: report
             path: ./results/Report.html
+
+      - name: Archive Robot Framework logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+            name: robot-logs
+            path: ./results
               
       - name: Setup Pages
         uses: actions/configure-pages@v5
