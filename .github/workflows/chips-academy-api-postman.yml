@@ -45,3 +45,9 @@ jobs:
         with:
             name: report
             path: ./results/Report.html
+              
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy to Githug Pages
+        uses: actions/deploy-pages@v4
