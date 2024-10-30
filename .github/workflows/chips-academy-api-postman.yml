@@ -8,6 +8,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,23 +37,11 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Step 3 Execute collection
-        run: newman run ./chips-collection.json -e ./chips-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/report.html
+        run: newman run ./chips-collection.json -e ./chips-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
 
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v2
+      # Runs a set of commands using the runners shell
+      - name: Step 4 Archive production artifacts
+        uses: actions/upload-artifact@v4
         with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Copy report to gh-pages
-        run: |
-          mkdir -p gh-pages/reports/results/
-          cp report.html gh-pages/reports//results/
-
-      - name: Commit and push report
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add gh-pages/reports/results/report.html
-          git commit -m "Add Postman report"
-          git push origin gh-pages
+            name: report
+            path: ./results/Report.html
