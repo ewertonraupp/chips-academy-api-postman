@@ -1,0 +1,189 @@
+{
+	"id": "a9760496-de82-41ec-8042-b91fbfc1be1e",
+	"name": "Chips",
+	"values": [
+		{
+			"key": "Url",
+			"value": "https://chips.qacoders.dev.br/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "FirstName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "LastName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "FullName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "ProviderMail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "CPF",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Mail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "tokenUser",
+			"value": "",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "userId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "companyId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "tokenAdmin",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "FirstCorporateName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "RandomNumberCorporate",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "CorporateName",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "CNPJ",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "FirstName2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "LastName2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "FullName2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "CPF2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Mail2",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Password2",
+			"value": "4321@Test",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "Password",
+			"value": "1234@Test",
+			"type": "secret",
+			"enabled": true
+		},
+		{
+			"key": "AccessProfile",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "MailAdmin",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "PassAdmin",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Telefone",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "RazaoSocial",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "providerMail",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "CEP",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "Numero",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-10-09T00:21:55.420Z",
+	"_postman_exported_using": "Postman/11.15.0"
+}
